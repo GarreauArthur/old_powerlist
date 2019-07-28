@@ -1,3 +1,43 @@
+I started this project to learn React.
+
+# Power list
+
+The main goal of the power list is to help people achieve their goals, by creating
+a daily list of actions.
+Doing a little bit of work everything day, to learn to win, and build the
+necessary habits to succeed.
+The work comes before the belief.
+
+Every single day, the user puts maximum 5 critical tasks he needs to do.
+The user can add more tasks but they will be considered as optional.
+The user can add tasks to a backlog.
+Some of the tasks can be repeated over the days to create a habit.
+
+If all the tasks of day are completed, then the day is marked by a W (Win), else
+it's an L (take that L loser).
+
+
+* Tasks
+  * task not goal
+  * 0 task set => L
+  * 5 max critical
+    * all done => W
+    * not all done => L
+  * all others are optional => extra points
+  * Can be repeated (habit)
+  * Set a time
+  * All tasks not done are put into the backlog
+
+A task is "completed" if done or time is up. (ex: do 1 hour of something)
+
+## Tech
+
+* React
+* [material-ui](https://material-ui.com)
+* [favicon](https://icons8.com/icon/52550/lightning-bolt)
+
+----------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
