@@ -1,17 +1,34 @@
 import React from 'react';
 import './App.css';
 import Checkbox from '@material-ui/core/Checkbox';
+import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme, makeStyles } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import ResponsiveDrawer from './ResponsiveDrawer'
 
+const useStyles = makeStyles(theme => ({
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+}))
 
 function App() {
+
+  const theme = createMuiTheme({
+    palette: {
+      type: 'dark',
+    },
+  });
+
   return (
-    <div className="App">
-      <Timer timeLeft="20" />
-      <Timer timeLeft="20" />
-      <Timer timeLeft="20" />
-      <Task id="1" text="Use your brain forehead" />
-    </div>
+
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <ResponsiveDrawer></ResponsiveDrawer>
+        
+    </ThemeProvider>
   );
+
 }
 
 export default App;
