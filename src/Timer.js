@@ -18,11 +18,11 @@ class Timer extends React.Component
   render()
   {
     return (
-      <box>
+      <div>
         <Button onClick={this.toggle} variant="contained" color={ (this.state.isOn) ? "secondary" : "primary" }>
           {new Date(this.state.timeLeft * 1000).toISOString().substr(11, 8) } { (this.state.isOn) ? "Stop" : "Start" }
         </Button>
-      </box>
+      </div>
     );
   }
 

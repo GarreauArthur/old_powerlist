@@ -142,7 +142,6 @@ class Task extends React.Component
     this.setState({
       text: e.target.value
     })
-    console.log(this.state.beforeEditing);
   }
 
   confirmTextEdit = () => {
@@ -151,7 +150,6 @@ class Task extends React.Component
       beforeEditing: state.text
     }));
 
-    console.log(this.state.beforeEditing);
   }
 
   cancelTextEdit = () => {

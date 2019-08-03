@@ -39,6 +39,14 @@ export default function NewTask(props)
             Create new task
           </Button>
         </FormGroup>
+        <FormGroup>
+          <TextField
+            id="timerPicker"
+            label="Timer"
+            type="time"
+            defaultValue="01:00"
+          />  
+        </FormGroup>
       </Paper>
     );
 
