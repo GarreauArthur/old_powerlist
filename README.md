@@ -29,12 +29,31 @@ it's an L (take that L loser).
   * All tasks not done are put into the backlog
 
 A task is "completed" if done or time is up. (ex: do 1 hour of something)
+i
+## useful stuff
+
+* [How To Make create-react-app work with a Node Back-end API](https://www.freecodecamp.org/news/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0/)
+* [Web browser is a pepega cause proxy is working](https://github.com/facebook/create-react-app/issues/1219#issuecomment-400515247)
+* [thing to build database diagrams](https://dbdiagram.io/d)
+
+### SQL conventions
+
+Let define SQL naming conventions and stick to them.
+
+* no upper case to prevent case problems with postgres
+* Table names are plural (ex: `tasks`)
+* column names are singular, underscore only (ex: `date_of_birth`)
+* Foreign key column: `name_foreign_key__name_primary_key` (ex: `type__id`)
+* Foreign key constraints: `fk__foreign_key_table__primary_key_table` (2 underscores)
+* enums: `name_enum`
 
 ## Tech
 
 * React
 * [material-ui](https://material-ui.com)
 * [favicon](https://icons8.com/icon/52550/lightning-bolt)
+* postgres 11
+* node 
 
 ----------------------------------
 
